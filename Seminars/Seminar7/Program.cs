@@ -1,40 +1,40 @@
 ﻿//Задача 1. Задайте двумерный массив размером m×n, заполненный случайными целыми числами.
-int[,] Create2DRandomArray(int rows, int columns, int minValue, int maxValue)
-{
-    int[,] array = new int[rows, columns];
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < columns; j++)
-        {
-            array[i, j] = new Random().Next(minValue, maxValue);
-        }
-    }
-    return array;
-}
+// int[,] Create2DRandomArray(int rows, int columns, int minValue, int maxValue)
+// {
+//     int[,] array = new int[rows, columns];
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < columns; j++)
+//         {
+//             array[i, j] = new Random().Next(minValue, maxValue);
+//         }
+//     }
+//     return array;
+// }
 
-void Print2DArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i, j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+// void Print2DArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
-Console.WriteLine("Input numbers of rows: ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input numbers of columns: ");
-int columns = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input minimal value of element: ");
-int minValue = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input maxmimal value of element: ");
-int maxValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of element: ");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maxmimal value of element: ");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
 
-int[,] myArray = Create2DRandomArray(rows, columns, minValue, maxValue);
-Print2DArray(myArray);
+// int[,] myArray = Create2DRandomArray(rows, columns, minValue, maxValue);
+// Print2DArray(myArray);
 
 //  Print2DArray(Create2DRandomArray(rows, columns, minValue, maxValue));
 
