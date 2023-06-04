@@ -134,40 +134,51 @@
 //     }
 // }
 
-// // Console.WriteLine("Input numbers of rows: ");
-// // int rows = Convert.ToInt32(Console.ReadLine());
-// // Console.WriteLine("Input numbers of columns: ");
-// // int columns = Convert.ToInt32(Console.ReadLine());
-// // Console.WriteLine("Input minimal value of element: ");
-// // int minValue = Convert.ToInt32(Console.ReadLine());
-// // Console.WriteLine("Input maxmimal value of element: ");
-// // int maxValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of element: ");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maxmimal value of element: ");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
 
-// int[,] myArray = Create2DRandomArray(3, 4, 1, 5);
+// int[,] myArray = Create2DRandomArray(rows, columns, minValue, maxValue);
 // Print2DArray(myArray);
 // Console.WriteLine();
-// //Console.WriteLine(myArray.GetLength(0));
 
-// double SumOfColumns(int[,] array)
+// double[] SumOfColumns(int[,] array)
 // {
 //     double sum = 0;
-//     //int columns = array.GetLength(0);
-//     for (int i = 0; i < array.GetLength(0); i++)
+//     int columns = array.GetLength(1);
+//     int rows = array.GetLength(0);
+//     double[] dArray = new double[columns];
+    
+//     for (int j = 0; j < array.GetLength(1); j++)
 //     {
         
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {   
-            
-//             if (j==0) 
+//         for (int i = 0; i < array.GetLength(0); i++)
+//         {    
 //                 sum += array[i, j];
                              
 //         }
-//         //sum = sum / columns;
+//         sum = sum / rows;
+//         dArray[j] =sum;
+//         sum = 0;
 //     }
-//     return sum;
+//     return dArray;
+// }
+// void PrintArray (double[] dArray)
+// {
+//     for(int i = 0; i < dArray.Length; i++)
+//     {
+//         Console.Write(dArray[i] + " ");
+//     }
+//     Console.WriteLine();
 // }
 // Console.WriteLine();
 
-// Console.WriteLine(SumOfColumns(myArray));
+// double [] Array = SumOfColumns(myArray);
+// PrintArray(Array);
 
 
