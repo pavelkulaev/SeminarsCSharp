@@ -138,3 +138,30 @@
 
 // myArray = LastToFirst(myArray);
 // Print2DArray(myArray);
+
+// int[,] LastToFirst (int[,] array, int firstString, int secondString)
+// {
+//     int count;
+//     if (firstString<0 || secondString> array.GetLength(0))
+//     {
+//         System.Console.WriteLine("Invalid number");
+//         return array;
+//     }
+//     else
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             count = array[firstString, j];
+//             array[firstString, j] = array[secondString,j];
+//             array[secondString,j] = count;
+//         }
+//         return array;
+//     }
+// }
+
+// Console.WriteLine("Input first number of column: ");
+// int firstString = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input second number of column: ");
+// int secondString = Convert.ToInt32(Console.ReadLine());
+// myArray = LastToFirst(myArray, firstString, secondString);
+// Print2DArray(myArray);
